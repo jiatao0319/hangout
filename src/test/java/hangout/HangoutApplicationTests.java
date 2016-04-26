@@ -1,4 +1,4 @@
-package com.objectivasoftware.hangout;
+package hangout;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

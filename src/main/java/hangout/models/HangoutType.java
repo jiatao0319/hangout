@@ -1,4 +1,4 @@
-package com.objectivasoftware.hangout.models;
+package hangout.models;
 
 /**
  * Created by williamli on 4/26/16.

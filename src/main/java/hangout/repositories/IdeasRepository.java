@@ -1,6 +1,6 @@
-package com.objectivasoftware.hangout.repositories;
+package hangout.repositories;
 
-import com.objectivasoftware.hangout.models.Idea;
+import hangout.models.Idea;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

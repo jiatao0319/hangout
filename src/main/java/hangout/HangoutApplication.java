@@ -1,4 +1,4 @@
-package com.objectivasoftware.hangout;
+package hangout;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

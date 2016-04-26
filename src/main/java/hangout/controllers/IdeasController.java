@@ -1,7 +1,7 @@
-package com.objectivasoftware.hangout.controllers;
+package hangout.controllers;
 
-import com.objectivasoftware.hangout.models.Idea;
-import com.objectivasoftware.hangout.repositories.IdeasRepository;
+import hangout.models.Idea;
+import hangout.repositories.IdeasRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
