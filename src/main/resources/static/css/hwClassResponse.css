@@ -1,0 +1,43 @@
+
+@media (max-width: 768px) {
+	.hw-choose-project{
+		/*overflow: hidden;*/
+	}
+	.select-choose{
+		width:75%;
+		float:left;
+	}
+	.hw-btn-box{
+		width:20%;
+		float:right;
+   		padding: 0;
+    	margin-right: 10px;
+	}
+	.form-group.hw-form-control{
+		overflow: hidden;
+	}
+	.col-sm-2.hw-form-control{
+		width:20%;
+		padding-right:0;
+		float:left;
+	}
+	.col-sm-10.hw-form-control{
+		width:80%;
+		float:left;
+		padding-left:0;
+	}
+	.col-sm-2.hw-form-control-lg{
+		width:35%;
+		padding-right:0;
+		float:left;
+	}
+	.col-sm-10.hw-form-control-sm{
+		width:65%;
+		float:left;
+		padding-left:0;
+	}
+	.col-sm-10.hw-form-control-sm .checkbox-inline{
+		padding-left:0;
+		padding-right:10px;
+	}
+}
