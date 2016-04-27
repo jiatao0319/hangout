@@ -1,0 +1,5 @@
+---
+applications:
+- name: hangout
+  path: build/libs/hangout-0.0.1-SNAPSHOT.jar
+
