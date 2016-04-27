@@ -1,0 +1,11 @@
+language: java
+deploy:
+  provider: cloudfoundry
+  api: https://api.run.pivotal.io
+  username: liweinan0423@icloud.com
+  password:
+    secure: tMH5tgTNBU+mRN7xX6Eg4VVAyGn45JhA/JYc+p2axHAUYW7/dOnRbuWlLK7VFnMMueb3PbszzoJDMeRxHgFsEwJAtCJT8slTyOrhE99/gtad3hh/ERWNK/J9zFiy+ZugOhosi4XX9LCMPX0CpoFYmv8Xt8OuikqxmD3udER36jlyFvt23gpdEr9GZzF+yzie9pHvUuqdyxzme4K6CpliNCSWcn1Ud0RcGQ10p3AeCGhNn8q2rM+zZ2hwKRoJhFV3L35tK8c9bCy4OYcMRF1yBad2su+Zv7c9zi4yhVH5FK1jnCeRr07uromwdCNOVu7lodPmtCDMAHopycGcPtUidkdeMQ9KR4GkPJ69GIPV2BHjD8ZJyEfz1OFmBj4HDUBkft5/YUVcDCpm2hobmKRJrb9aiPJrNkOXNOQvsTpWlabutmSZWljCV1Zd6xSieu4Qdrkz2oKdimEyUnlRtIkfin65GqcyCH3ZPDty/Xsvkn39BopaqKpqyWcR7LkaSk3IZ0qzPupTpEb5oFgqdovJgGdRqZ5ZVhFRu/1pW/b37pGOd6m80DqBs6YpKHLBdfSb9tQphhBVaIOpWS4mU19ltfy+Pu4XIRPBBmhZQc7you2XjkwDfYdesMUqJMOSAMiRljVTTZNogVGuNFoEcMkKQgcQiiFY9RvDcgmondrld7Y=
+  organization: william
+  space: development
+  on:
+    repo: liweinan0423/hangout
