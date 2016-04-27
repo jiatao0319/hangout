@@ -1,9 +1,9 @@
 package hangout.repositories;
 
-import hangout.models.Idea;
+import hangout.models.Hangout;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface IdeasRepository extends JpaRepository<Idea, Long> {
+public interface HangoutsRepository extends JpaRepository<Hangout, Long> {
 }
