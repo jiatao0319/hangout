@@ -3,7 +3,7 @@ $(function(){
     var type = getURLParameter("type");
 
     // Init datetimepicker
-    $("#datetimepicker").datetimepicker({value: new Date()});
+    $("#datetimepicker").datetimepicker({value: new Date(), format: 'Y-m-d'});
 
     // Set the hangout type
     setHangoutType(type);
@@ -11,12 +11,12 @@ $(function(){
      $("#create-date-btn").on("click", function () {
             $.ajax({
                 url: "/hangouts",
-                data: {
+                data: JSON.stringify({
                       "date": $("#datetimepicker").val(),
                       "type": $("#type-" + type + "-select").val(),
                       "location": $("#location").val(),
                       "scope": $("#scope").val()
-                    },
+                    }),
                 dataType: "json",
                 type: "POST",
                 contentType: "application/json; charset=utf-8",
