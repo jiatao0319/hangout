@@ -17,17 +17,6 @@ $(function(){
 		var _parents = $(this).parents(".hw-tab-content-box");
 		_parents.find(".hw-tab-cont-ul li").show();
 	});
-
-	// When "喊我" button is clicked
-	$("#hangout-go").on("click", function () {
-	    $("#hangout-type").val();
-        window.location = "createdate.html?type=" + $("#hangout-type").val();
-	});
-
-	var type = getURLParameter("type");
-	$("#hangout-type").find("option[value='" + type + "']").attr("selected", true);
-
-    setInterval(function(){ $(".matched").fadeOut(100).fadeIn(100); },200);
 });
 
 function getURLParameter(name) {
