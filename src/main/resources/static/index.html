@@ -8,7 +8,7 @@
     <link href="css/hwClass.css" rel="stylesheet" type="text/css"/>
     <link href="css/hwClassResponse.css" rel="stylesheet" type="text/css"/>
     <script src="js/jquery-2.1.4.min.js"></script>
-    <script src="js/hw.js"></script>
+    <script src="js/common/common.js"></script>
 </head>
 <body>
 
@@ -33,6 +33,7 @@
 	    				活跃值：200
 	    			</span>
             </div>
+            \
         </div>
     </section>
 </div>
@@ -40,14 +41,14 @@
     <div class="container no-padding-left no-padding-right">
         <div class="row">
             <div class="col-md-11 select-choose">
-                <select class="form-control">
-                    <option>吃啥</option>
-                    <option>喝啥</option>
-                    <option>玩啥</option>
+                <select id="hangout-type" class="form-control">
+                    <option value="eat">吃啥</option>
+                    <option value="drink">喝啥</option>
+                    <option value="play">玩啥</option>
                 </select>
             </div>
             <div class="col-md-1 hw-btn-box text-right col-sm-6">
-                <a class="btn hw-btn">喊我</a>
+                <a id="hangout-go" class="btn hw-btn">喊我</a>
             </div>
         </div>
     </div>
