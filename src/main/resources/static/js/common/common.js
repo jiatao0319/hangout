@@ -23,4 +23,18 @@ $(function(){
 	    $("#hangout-type").val();
         window.location = "createdate.html?type=" + $("#hangout-type").val();
 	});
-})
+
+	var type = getURLParameter("type");
+	$("#hangout-type").find("option[value='" + type + "']").attr("selected", true);
+
+    setInterval(function(){ $(".matched").fadeOut(100).fadeIn(100); },200);
+});
+
+function getURLParameter(name) {
+    return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search)||[,""])[1].replace(/\+/g, '%20'))||null;
+};
+
+function setHangoutType (type) {
+    $("div[id*='type-']").hide();
+    $("#type-" + type).show();
+};

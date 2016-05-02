@@ -22,21 +22,12 @@ $(function(){
                 contentType: "application/json; charset=utf-8",
                 success: function (data) {
                     //请求成功时处理
-                    alert("创建成功！");
+                    window.location = "index.html?type=" + type;
                 },
                 error : function() {
                     // view("异常！");
-                    alert("异常！");
+                    alert("没网还想调戏我！");
                 }
             });
      });
-})
-
-function setHangoutType (type) {
-    $("div[id*='type-']").hide();
-    $("#type-" + type).show();
-};
-
-function getURLParameter(name) {
-    return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search)||[,""])[1].replace(/\+/g, '%20'))||null;
-};
+});
